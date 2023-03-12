@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+}
+
+.wrapper {
+
+  margin: 20px auto;
+  width: 50vw;
+  border: 5px solid rgb(245, 177, 87);
+  border-radius: 10px;
+  background: rgb(245, 177, 87);
+
+}
+
+.header {
+  background-color: rgb(245, 177, 87);
+  padding: 15px;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.p-accordion {
+  margin: 0 auto;
+
+}
+
+.p-accordion:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+
+
+summary {
+  display: block;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+
+  display: none;
+}
+
+.p-accordion__title {
+  position: relative;
+  font-size: 18px;
+  line-height: calc(26 / 18);
+  font-weight: bold;
+  color: blue;
+  background-color: #b4e4c4;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper:hover .p-accordion__title {
+  color: black;
+
+}
+
+.p-accordion__icon-bar {
+
+  transform: translateY(50%);
+  display: none;
+  width: 20px;
+  height: 2px;
+  background-color: #663838;
+}
+
+.wrapper:hover .p-accordion__icon-bar {
+  transform: translateY(50%);
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #663838;
+}
+
+
+.p-accordion__content img {
+  width: 50%;
+  display: block;
+  ;
+
+  transition: 1s;
+  margin: 7px auto;
+
+
+}
+
+.p-accordion__content img:hover {
+  transform: scale(1.05)
+}
+
+.wrapper:hover .p-accordion__icon-bar:nth-of-type(2) {
+  transform: translateY(-50%) rotate(-90deg);
+  transition: transform .3s;
+}
+
+
+details[open] .p-accordion__icon-bar:nth-of-type(2) {
+  transform: translateY(-50%) rotate(0deg) !important
+}
+
+details[open] .p-accordion__title {
+  color: black;
+}
+
+details .p-accordion__title {
+  color: rgb(4, 50, 234);
+}
+
+details[open] {
+  animation: spoiler 1.5s;
+}
+
+@keyframes spoiler {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.p-accordion__content {
+  overflow: hidden;
+  background-color: rgb(231, 231, 231);
+}
+
+.p-accordion__answer {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.1em;
+  color: #333333;
+  padding: 20px;
+  background-color: rgb(242, 237, 237);
+}
+
+.p-accordion__item {
+  border: 5px solid #b4e4c4;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(163, 174, 163);
+  margin-bottom: px;
+}
+
+
+.divide-border {
+  border-bottom: 3px solid rgb(121, 116, 116);
+  padding: 3px;
+  margin: 0 5px;
+}
