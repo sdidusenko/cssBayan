@@ -115,21 +115,10 @@ details[open] {
   background-color: rgb(231, 231, 231);
 }
 
-.p-accordion__answer {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.1em;
-  color: #333333;
-  padding: 20px;
-  background-color: rgb(242, 237, 237);
-}
-
 .p-accordion__item {
   border: 5px solid #b4e4c4;
   border-radius: 5px;
   box-shadow: 2px 2px rgb(163, 174, 163);
-  margin-bottom: px;
 }
 
 .divide-border {
