@@ -3,13 +3,11 @@
 }
 
 .wrapper {
-
   margin: 20px auto;
   width: 50vw;
   border: 5px solid rgb(245, 177, 87);
   border-radius: 10px;
   background: rgb(245, 177, 87);
-
 }
 
 .header {
@@ -23,14 +21,11 @@
 
 .p-accordion {
   margin: 0 auto;
-
 }
 
 .p-accordion:not(:first-of-type) {
   margin-top: 5px;
 }
-
-
 
 summary {
   display: block;
@@ -38,7 +33,6 @@ summary {
 }
 
 summary::-webkit-details-marker {
-
   display: none;
 }
 
@@ -57,11 +51,9 @@ summary::-webkit-details-marker {
 
 .wrapper:hover .p-accordion__title {
   color: black;
-
 }
 
 .p-accordion__icon-bar {
-
   transform: translateY(50%);
   display: none;
   width: 20px;
@@ -77,16 +69,11 @@ summary::-webkit-details-marker {
   background-color: #663838;
 }
 
-
 .p-accordion__content img {
   width: 50%;
   display: block;
-  ;
-
   transition: 1s;
   margin: 7px auto;
-
-
 }
 
 .p-accordion__content img:hover {
@@ -97,7 +84,6 @@ summary::-webkit-details-marker {
   transform: translateY(-50%) rotate(-90deg);
   transition: transform .3s;
 }
-
 
 details[open] .p-accordion__icon-bar:nth-of-type(2) {
   transform: translateY(-50%) rotate(0deg) !important
@@ -119,7 +105,6 @@ details[open] {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -146,7 +131,6 @@ details[open] {
   box-shadow: 2px 2px rgb(163, 174, 163);
   margin-bottom: px;
 }
-
 
 .divide-border {
   border-bottom: 3px solid rgb(121, 116, 116);
